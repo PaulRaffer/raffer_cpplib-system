@@ -1,7 +1,7 @@
 
-// Copyright (c) 2020 Paul Raffer.
+// Copyright Paul Raffer 2020.
 // Distributed under the Boost Software License, Version 1.0.
-// (See accompanying file LICENSE_1_0.txt or copy at
+// (See accompanying file LICENSE or copy at
 // https://www.boost.org/LICENSE_1_0.txt)
 
 #if __cplusplus >= 201103L
@@ -18,8 +18,7 @@
 #endif
 
 
-namespace raffer // implementation
-{
+namespace gpl { // implementation
 
 auto clear_screen() -> int
 {
@@ -69,9 +68,11 @@ auto is_down(key k) -> bool
 }
 
 auto is_up(key k) -> bool
-{ return !is_down(k); }
+{
+	return !is_down(k);
+}
 
-} // namespace raffer
+} // namespace gpl
 
 
 #endif // __cplusplus >= 201103L

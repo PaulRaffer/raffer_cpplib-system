@@ -1,25 +1,23 @@
 
-// Copyright (c) 2020 Paul Raffer.
+// Copyright Paul Raffer 2020.
 // Distributed under the Boost Software License, Version 1.0.
-// (See accompanying file LICENSE_1_0.txt or copy at
+// (See accompanying file LICENSE or copy at
 // https://www.boost.org/LICENSE_1_0.txt)
 
 #if __cplusplus >= 201103L
 
-#ifndef RAFFER_SYSTEM_SYSTEM_HPP
-#define RAFFER_SYSTEM_SYSTEM_HPP
+#ifndef GPL_SYSTEM_SYSTEM_HPP
+#define GPL_SYSTEM_SYSTEM_HPP
 
-#define raffer_cpplib_system__ 202005L
+#define gpl_cpp_system__ 202005L
 
 
 #include <cstdio>
 
 
-namespace raffer // interface
-{
+namespace gpl { // interface
 
-enum class os
-{
+enum class os {
 	AIX,
 	Android,
 	Amdahl_UTS,
@@ -98,8 +96,7 @@ auto enable_unicode_stdio() -> void;
 auto disable_unicode_stdio() -> void;
 
 
-enum class key
-{
+enum class key {
 	left_mouse_button       = 0x01,
 	right_mouse_button      = 0x02,
 	controlbreak_processing = 0x03,
@@ -268,9 +265,9 @@ enum class key
 auto is_down(key k) -> bool;
 auto is_up(key k) -> bool;
 
-} // namespace raffer
+} // namespace gpl
 
 
-#endif // RAFFER_SYSTEM_SYSTEM_HPP
+#endif // GPL_SYSTEM_SYSTEM_HPP
 
 #endif // __cplusplus >= 201103L
